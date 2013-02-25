@@ -56,32 +56,24 @@ function logToConsoleFunc(errorType) {
 }
 
 document.addEventListener("deviceready", function() {
-/*
-    var shush = new Media('file://www/audio/shush.mp3',
-        function onSuccess() {
-            console.log("shush.mp3 loaded and ready");
-            shush.play();
-        }, logToConsoleFunc("new Media shush"));
-    shush.play();
-*/
 	var RECORD_FILENAME = 'listen.';
 	var TIME_WINDOW_MS = 100;
 
 	function shush() {
-		console.log(document.getElementsByTagName("audio")[0].src);
-		document.getElementsByTagName("audio")[0].play();
+		var path = window.location.pathname;
+    path = path.substr( path, path.lastIndexOf('/') );
+		new Media("file://" + path + "/audio/shush.mp3").play();
 	}
 	shush();
 
-		var recordToFile = RECORD_FILENAME;
-		switch (device.platform) {
-		    case 'iOS':
-		        recordToFile += 'amr';
-		        break;
-		    default: // Android, Blackberry
-		        recordToFile += 'wav';
-		}
-
+	var recordToFile = RECORD_FILENAME;
+	switch (device.platform) {
+    case 'iOS':
+			recordToFile += 'amr';
+      break;
+		default: // Android, Blackberry
+      recordToFile += 'wav';
+	}
 
 	window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function gotFsForCreateBlank(fileSystem) {
 	  var RECORD_FILEPATH = fileSystem.root.fullPath + '/' + recordToFile;
@@ -103,30 +95,9 @@ document.addEventListener("deviceready", function() {
           console.log("Stopping recording...OK");
           recorder();
 
-
-
-
+					console.log(document.getElementsByTagName("audio")[0].src)
         }, TIME_WINDOW_MS);
 		}
 		recorder();
 	}, logToConsoleFunc("requestFileSystem"));
-
-
-
-
-/*
-    console.log("record to file: " + recordToFile);
-    var recorder = new Media(recordToFile, function onSuccess() {
-    }, logToConsoleFunc("new Media recorder"));
-    console.log("recorder: " + JSON.stringify(recorder));
-
-    console.log("startRecord" + JSON.stringify(recorder));
-    recorder.startRecord();
-    setTimeout(function() {
-        console.log("stopRecord" + JSON.stringify(recorder));
-        recorder.stopRecord();
-    }, 100);
-
-    recorder.play();
-*/
 }, logToConsoleFunc("deviceready"));
