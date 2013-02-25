@@ -47,3 +47,86 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+function logToConsoleFunc(errorType) {
+	return function(error) {
+		errMsg = "ERROR: [" + errorType + "] " + JSON.stringify(error);
+		console && console.error ? console.error(errMsg) : alert(errMsg);
+	}
+}
+
+document.addEventListener("deviceready", function() {
+/*
+    var shush = new Media('file://www/audio/shush.mp3',
+        function onSuccess() {
+            console.log("shush.mp3 loaded and ready");
+            shush.play();
+        }, logToConsoleFunc("new Media shush"));
+    shush.play();
+*/
+	var RECORD_FILENAME = 'listen.';
+	var TIME_WINDOW_MS = 100;
+
+	function shush() {
+		console.log(document.getElementsByTagName("audio")[0].src);
+		document.getElementsByTagName("audio")[0].play();
+	}
+	shush();
+
+		var recordToFile = RECORD_FILENAME;
+		switch (device.platform) {
+		    case 'iOS':
+		        recordToFile += 'amr';
+		        break;
+		    default: // Android, Blackberry
+		        recordToFile += 'wav';
+		}
+
+
+	window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function gotFsForCreateBlank(fileSystem) {
+	  var RECORD_FILEPATH = fileSystem.root.fullPath + '/' + recordToFile;
+    console.log('creating ' + RECORD_FILEPATH);
+    fileSystem.root.getFile(recordToFile, {create: true, exclusive: false}, function() {
+        console.log("Initializing audio...");
+        navigator.audio = new Media(RECORD_FILEPATH, function(){},logToConsoleFunc('FAILED to create Media to record'));
+        console.log("Initializing audio...OK");
+    }, logToConsoleFunc("getFile (create)"));
+
+    function recorder() {
+        console.log("Starting recording...");
+        navigator.audio.startRecord();
+        console.log("Starting recording...OK");
+
+        setTimeout(function stopRecording() {
+          console.log("Stopping recording...");
+          navigator.audio.stopRecord();
+          console.log("Stopping recording...OK");
+          recorder();
+
+
+
+
+        }, TIME_WINDOW_MS);
+		}
+		recorder();
+	}, logToConsoleFunc("requestFileSystem"));
+
+
+
+
+/*
+    console.log("record to file: " + recordToFile);
+    var recorder = new Media(recordToFile, function onSuccess() {
+    }, logToConsoleFunc("new Media recorder"));
+    console.log("recorder: " + JSON.stringify(recorder));
+
+    console.log("startRecord" + JSON.stringify(recorder));
+    recorder.startRecord();
+    setTimeout(function() {
+        console.log("stopRecord" + JSON.stringify(recorder));
+        recorder.stopRecord();
+    }, 100);
+
+    recorder.play();
+*/
+}, logToConsoleFunc("deviceready"));
