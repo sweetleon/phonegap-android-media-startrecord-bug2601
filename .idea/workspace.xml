@@ -15,17 +15,14 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="PhoneGap" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7135ff0b-1392-4798-a0ec-c9de7592356e" name="Default" comment="removed from Git">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/scratch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/index.html" afterPath="$PROJECT_DIR$/assets/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/js/index.js" afterPath="$PROJECT_DIR$/assets/www/js/index.js" />
+    <list default="true" id="7135ff0b-1392-4798-a0ec-c9de7592356e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/js/app.js" afterPath="$PROJECT_DIR$/assets/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Shusher.phonegap.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1362069389001" ignored="false" />
-    <file path="/Dummy.txt" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1362070330840" ignored="false" />
+    <file path="/Dummy.txt" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1362070363536" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/android/lib/android.jar!/org/jetbrains/android/android.xsd" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1362067411575" ignored="false" />
     <file path="/fragment.java" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1361966602087" ignored="false" />
     <file path="/index.js" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1362063441578" ignored="false" />
@@ -43,6 +40,7 @@
     <file path="$PROJECT_DIR$/../Phonegap.Recording.example/assets/www/main.js" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1361967764525" ignored="false" />
     <file path="/a.java" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1362064134222" ignored="false" />
     <file path="/a.dummy" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1362069629863" ignored="false" />
+    <file path="/app.js" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1362070440502" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,10 +117,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="2" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.8148148">
+            <state line="48" column="2" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/www/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="2" selection-start="313" selection-end="313" vertical-scroll-proportion="0.40123457">
               <folding />
             </state>
           </provider>
@@ -169,9 +176,9 @@
         <option value="$PROJECT_DIR$/assets/www/js/example.js" />
         <option value="$PROJECT_DIR$/assets/www/cordova-2.3.0.js" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/assets/www/js/app.js" />
         <option value="$PROJECT_DIR$/assets/www/index.html" />
         <option value="$PROJECT_DIR$/assets/www/js/index.js" />
+        <option value="$PROJECT_DIR$/assets/www/js/app.js" />
       </list>
     </option>
   </component>
@@ -577,7 +584,11 @@
       <created>1362067481127</created>
       <updated>1362067481127</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="removed my code from index.js into scratch.js&#10;will re-create/correct it into app.js">
+      <created>1362070371556</created>
+      <updated>1362070371556</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -613,7 +624,7 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <value>
         <are-packages-shown value="false" />
@@ -645,7 +656,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed from Git" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed my code from index.js into scratch.js&#10;will re-create/correct it into app.js" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -665,6 +676,7 @@
     <MESSAGE value="IntelliJ did that" />
     <MESSAGE value="says it's recording but the file is always empty" />
     <MESSAGE value="removed from Git" />
+    <MESSAGE value="removed my code from index.js into scratch.js&#10;will re-create/correct it into app.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -762,16 +774,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/js/app.js">
+    <entry file="file://$PROJECT_DIR$/assets/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="204" selection-end="204" vertical-scroll-proportion="0.030864198">
+        <state line="48" column="2" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/js/index.js">
+    <entry file="file://$PROJECT_DIR$/assets/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="2" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.8148148">
+        <state line="13" column="2" selection-start="313" selection-end="313" vertical-scroll-proportion="0.40123457">
           <folding />
         </state>
       </provider>
