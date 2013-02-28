@@ -16,21 +16,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7135ff0b-1392-4798-a0ec-c9de7592356e" name="Default" comment="plays audio at startup, doesn't respond to sound yet">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/index.html" afterPath="$PROJECT_DIR$/assets/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/js/index.js" afterPath="$PROJECT_DIR$/assets/www/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Shusher.phonegap.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1361966983574" ignored="false" />
-    <file path="/Dummy.txt" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1362067289958" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/plugins/android/lib/android.jar!/org/jetbrains/android/android.xsd" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1359653172478" ignored="false" />
+    <file path="/Dummy.txt" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1362067412054" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/android/lib/android.jar!/org/jetbrains/android/android.xsd" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1362067411575" ignored="false" />
     <file path="/fragment.java" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1361966602087" ignored="false" />
     <file path="/index.js" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1362063441578" ignored="false" />
     <file path="/cordova-2.3.0.js" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1361828598380" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1361964124609" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1361932413563" ignored="false" />
     <file path="$PROJECT_DIR$/../Phonegap.Recording.example/AndroidManifest.xml" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1361966592267" ignored="false" />
     <file path="$PROJECT_DIR$/../Phonegap.Recording.example/res/values/strings.xml" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1361966166876" ignored="false" />
     <file path="$PROJECT_DIR$/../Phonegap.Recording.example/src/com/example/Phonegap_Recording_example/MyActivity.java" changelist="7135ff0b-1392-4798-a0ec-c9de7592356e" time="1361966168227" ignored="false" />
@@ -654,7 +650,19 @@
       <created>1362067287403</created>
       <updated>1362067287403</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="removed from Git">
+      <created>1362067324302</created>
+      <updated>1362067324302</updated>
+    </task>
+    <task id="LOCAL-00006" summary="IntelliJ did that">
+      <created>1362067356853</created>
+      <updated>1362067356853</updated>
+    </task>
+    <task id="LOCAL-00007" summary="says it's recording but the file is always empty">
+      <created>1362067407984</created>
+      <updated>1362067407984</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -722,7 +730,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="internet access just for debug.phonegap.com" />
+    <option name="LAST_COMMIT_MESSAGE" value="says it's recording but the file is always empty" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -739,6 +747,9 @@
     <MESSAGE value="plays audio at startup, doesn't respond to sound yet" />
     <MESSAGE value="ignore some stuff" />
     <MESSAGE value="internet access just for debug.phonegap.com" />
+    <MESSAGE value="removed from Git" />
+    <MESSAGE value="IntelliJ did that" />
+    <MESSAGE value="says it's recording but the file is always empty" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
