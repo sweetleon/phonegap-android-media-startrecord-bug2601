@@ -44,7 +44,9 @@
           <root url="jar://$MODULE_DIR$/libs/cordova-2.3.0.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://$USER_HOME$/Downloads/phonegap.src/cordova-android/framework/src" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>
