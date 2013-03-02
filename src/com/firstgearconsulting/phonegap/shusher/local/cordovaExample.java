@@ -17,10 +17,12 @@
        under the License.
  */
 
-package org.apache.cordova.example;
+package com.firstgearconsulting.phonegap.shusher.local;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.Log;
 import org.apache.cordova.*;
 
 public class cordovaExample extends DroidGap
